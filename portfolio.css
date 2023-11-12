@@ -1,0 +1,214 @@
+*{
+    margin: 0.2pxs;
+    padding: 0.2px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom,rgb(10, 10, 10),rgb(40, 40, 40),rgb(113, 113, 113));;
+}
+.hero{
+    height:100vh ;
+    width: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    
+ }
+ 
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    animation: slideTop 1s ease forwards;
+   
+ }
+
+ .logo{
+    color: rgba(214, 219, 214, 0.975);
+    font-size: 35px;
+    letter-spacing: 1px;
+    animation: slideBotton 1s ease forwards;
+ }
+ nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:  20px;
+    margin: 5px;
+ }
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+nav ul li a:hover{
+    color: rgb(251, 252, 248);
+    transition: .3s;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: translateY(-50%);
+    animation: slideTop 1s ease forwards;
+}
+
+.imgg {
+    flex: 1; 
+    display: flex;
+    justify-content: right; 
+    align-items:flex-end; 
+    padding: 0px 150px 0px 0px;
+
+}
+h1{
+    color: rgb(247, 246, 246);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    animation: slideLeft 2s ease forwards;
+}
+h3{
+    color: rgb(248, 247, 247);
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+h4{
+    color: rgb(249, 246, 246);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.main{
+
+    flex: 1; 
+    display: flex;
+    justify-content: left; 
+    align-items:flex-start; 
+    padding: 0px 0px 0px 100px;
+
+}
+.about{
+    padding: 10px 10px;
+    color: rgb(245, 246, 247);
+}
+
+.h2{
+    color: rgb(255, 255, 255);
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.h5{
+    color: rgb(246, 246, 247);
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+p{
+    color: rgb(248, 245, 245);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.skills h2{
+    color: rgb(255, 253, 253);
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.matter{
+    color: rgb(249, 248, 248);
+    font-size: 50px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contact h2{
+    color: rgba(250, 252, 253, 0.996);
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.hima{
+    color: rgb(251, 249, 250);
+    font-size: 30px;
+    width: 1180px;
+    margin: 30px auto;
+    text-align:left;
+}
+.icon{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    font-size: 50px;
+    color: rgba(244, 242, 242, 0.934);
+    
+}
+.icon i:hover{
+  color:rgb(245, 245, 246);
+  scale: 1.4;
+ 
+}
+.btn{
+    border:2px  solid rgb(6, 17, 6);
+    background-color: rgb(11, 91, 64);
+    border-radius: 15px;
+    padding: 10px 30px ;
+    color:rgba(213, 213, 220, 0.916);
+    margin-left: 30%;
+    box-shadow: 5px 5px 5px rgba(239, 237, 237, 0.59);
+    font-size: 30px;
+    letter-spacing: 1px;
+    
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translatex(-100px);
+        opacity:0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity:0
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity:0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
