@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+</head>
+    <style>
+        body{
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin:auto;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(105, 86, 124, 0.597);
+
+        }
+        .todocontainer{
+            border: 3px solid black;
+            width:50vw;
+            margin: 30px;
+            text-align: center;
+            background-color: rgba(53, 110, 203, 0.63);
+            border-radius: 20px;
+        }
+        button{
+            color: aliceblue;
+            background-color: blue;
+        }
+        h1{
+            color: rgba(36, 2, 137, 0.844);
+        }
+        .listcontainer{
+            display: flex;
+            border: 1px solid black;
+        }
+        .listcontainer li{
+            width: 300px;
+            margin: 10px;
+            list-style-type:none;
+        }
+    </style>
+<body>
+    <div class="todocontainer">
+        <span id="errormsg"></span>
+        <h1>To Do Tasks</h1>
+
+        <div class="usertaskcontainer">
+            <input type="text" placeholder="enter the task" id="usertask">
+            <button onclick="addtask()">Add Task</button>
+            
+            
+        </div>
+        <div class="listitemscontainer">
+            <ul id="listitems">
+
+                <div class="listcontainer">
+                    <li>html</li>
+                <button onclick="">delete</button>
+            </ul>
+        </div>
+        </div>
+
+       
+
+    </div>
+    <script src="todolistapp.js"></script>
+</body>
+</html>
